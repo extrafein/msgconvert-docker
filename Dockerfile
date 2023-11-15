@@ -6,7 +6,7 @@ WORKDIR /messages
 
 # Install required packages
 RUN apk update && \
-    apk add --no-cache wget perl perl-mail-tools
+    apk add --no-cache wget perl perl-mail-tools perl-io-socket-ssl
 
 # Install msgconvert using cpan
 RUN wget https://raw.githubusercontent.com/mvz/email-outlook-message-perl/master/script/msgconvert && \
