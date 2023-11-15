@@ -9,7 +9,7 @@ RUN apk update && \
     apk add --no-cache wget perl perl-mail-tools
 
 # Install msgconvert using cpan
-RUN wget https://github.com/mvz/email-outlook-message-perl/raw/master/msgconvert && \
+RUN wget https://raw.githubusercontent.com/mvz/email-outlook-message-perl/master/script/msgconvert && \
     chmod +x msgconvert && \
     mv msgconvert /usr/local/bin/msgconvert
 
